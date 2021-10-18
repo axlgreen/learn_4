@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "name": "Check table 'tracks' for data existing",
+      "query": "SELECT count(*) FROM hr.countries",
+      "expected": 25
+    }
+  ]
+}
