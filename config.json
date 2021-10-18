@@ -1,0 +1,8 @@
+{"dev": {
+    "database": "hr.regions",
+    "test_data_folder": "C:/Users/Alexander_Pakhmyolki/PycharmProjects/learn_4/test_data"
+  },
+
+  "uat": {
+  }
+}
