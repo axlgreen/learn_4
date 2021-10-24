@@ -1,8 +1,0 @@
-
-
-Testing of C:/Users/Alexander_Pakhmyolki/PycharmProjects/learn_4/test_data\smoke_tests.json was started
-
-
-Test case 'Check table 'tracks' for data existing'
-PASS. Result is '25' as expected
-Query: 'SELECT count(*) FROM hr.countries'
