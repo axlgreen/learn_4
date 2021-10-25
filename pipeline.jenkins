@@ -1,7 +1,9 @@
 pipeline {
     agent any
     stages {
-	stage ('GIT Checkout'){steps {git changelog: false, poll: false, url: 'https://github.com/axlgreen/learn_4'}
+	stage ('GIT Checkout'){steps 
+	{git branch: 'master', 
+		url: 'https://github.com/axlgreen/learn_4.git'}}
 
 	stage('Build') {steps {sh 'pip install -r requirements.txt'}}
 
@@ -10,4 +12,5 @@ pipeline {
 
             post {always {container('python') {junit 'test-reports/*.xml'}}}
         }
+    }
 }
