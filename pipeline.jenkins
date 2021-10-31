@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {steps {sh 'pip install -r requirements.txt'}}
 
         stage('Test') {
-            steps {sh 'python main.py'}
+            steps {sh 'python main2.py'}
         }
     }
 }
